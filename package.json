@@ -1,0 +1,15 @@
+{
+  "name" : "kapusta",
+  "description" : "mvc framework for node with mysql orm, web sockets support, logging, routing, user roles etc",
+  "keywords" : ["kapusta"],
+  "version" : "0.0.1",
+  "author" : "Vladimir Balakirev <bvlvl2003@rambler.ru>",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/vlvl/kapusta.git"
+  },
+  "dependencies" : {
+    "autodafe" : "*"
+  },
+  "engines" : { "node": ">=0.8.0" }
+}
