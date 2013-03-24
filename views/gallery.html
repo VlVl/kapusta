@@ -5,7 +5,16 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
-</head>
+  <link href="css/ppgallery.css" rel="stylesheet" type="text/css" />
+  <link href="css/dark-hive/jquery-ui-1.8.6.custom.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/ppgallery.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#gallery').ppGallery();
+    });
+  </script>
+    </head>
 <body>
 <div class="wrap">
   <div class="top">
@@ -27,32 +36,21 @@
     <span class="easyfind"><i><b>ЛЕГКО НАЙТИ СВОЕ</b></i></span>
     <div contenteditable="true" class="findtext"></div>
     <span class="find">ПОИСК: </span></div>
-  <div class="leftmenu">
-    <ul class="catalog">
-      <li class="sel"><img src="img/smalllogo.png"><span><a href="/">каталог одежды</a></span></li>
-      <li><img src="img/smalllogo.png"><span><a href="/gallery">Галерея</a></span></li>
-      <!--<li><img src="img/smalllogo.png"><a href="/gallery"><span>женская одежда</span></a></li>-->
+  <!--<div class="leftmenu">-->
+    <!--<ul class="catalog">-->
+      <!--<li class="sel"><img src="img/smalllogo.png"><span>каталог одежды</span></li>-->
+      <!--<li><img src="img/smalllogo.png"><span>женская одежда</span></li>-->
       <!--<li><img src="img/smalllogo.png"><span>мужская одежда</span></li>-->
       <!--<li><img src="img/smalllogo.png"><span>одежда для детей</span></li>-->
+    <!--</ul>-->
+  <!--</div>-->
+  <div class="gallery">
+    <ul id="gallery">
+      {#photos}
+      <li><a href="img/photos/{.}"><img src="img/small/{.}"></a></li>
+      {/photos}
     </ul>
   </div>
-  <table class="content"><tr>
-    <td class="cell">
-      <img src="img/women.png"><br><i>женская одежда</i>
-    </td>
-    <td class="cell">
-      <img src="img/child.png"><br><i>детская одежда</i>
-    </td>
-    <td class="cell">
-      <img src="img/men.png"><br><i>мужская одежда</i>
-    </td>
-  </tr></table>
-  <table width='100%'><tr><td>
-    <div class="line"></div>
-  </td></tr></table>
-
-  <div id="page"></div>
-  <script src="js/script.js"></script>
 
 </div>
 <script src="js/main.js"></script>

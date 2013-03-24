@@ -1,4 +1,6 @@
-// наследуем наш контроллер от Controller
+var fs          = require('fs');
+var path        = require('path');
+
 module.exports = Site.inherits( global.autodafe.Controller );
 
 /**
@@ -23,5 +25,14 @@ Site.prototype.index = function ( response, request ) {
   // метод response.send сам найдет представлением с таким же именем как и название действия - index.html
   response.send({
     name : this.app.params.your_name
+  });
+};
+Site.prototype.gallery = function ( response, request ) {
+  var photos = [];
+  fs.readdirSync( path.join( __dirname, '../static/img/photos' ) ).forEach( function( file ) {
+    photos.push( file );
+  }, this );
+  response.send({
+    photos : photos
   });
 };

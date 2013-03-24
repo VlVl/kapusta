@@ -8,7 +8,7 @@ var config = module.exports = {
    *
    * @type {String}
    */
-  name                : 'hello_world',
+  name                : 'kapusta',
 
   /**
    * Корневая директория приложения, в ней по умолчанию ищутся директории с моделями, контроллерами, вьюшками,
@@ -25,9 +25,8 @@ var config = module.exports = {
    * @property {String} your_name ваше имя, которое будет выводиться на главной странице
    */
   params : {
-    your_name : 'Andrey'
   },
-
+  cache_views : false,
   /**
    * Настройки компонента отвечающего за перенаправление запросов и генерацию запросов
    *
@@ -35,7 +34,8 @@ var config = module.exports = {
    */
   router : {
     rules     : {
-      ''                      : 'site.index'
+      ''        : 'site.index',
+      'gallery' : 'site.gallery'
     }
   },
 
@@ -58,7 +58,12 @@ var config = module.exports = {
 
     // http сервер
     http                : {
-      port : 3000
+      port : 3000,
+      root_folders    : {
+        js       : 'static/js',
+        css      : 'static/css',
+        img      : 'static/img'
+      }
     },
 
     // настройки логгера
