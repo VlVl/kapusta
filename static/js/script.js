@@ -12,7 +12,7 @@
 		var picArr = [
 			new pic({
 				top : 100, left : 30, width : 60,height : 100, href:'#',
-				img : { src : 'img/galery_small/1.png', offsetTop : 50, offsetLeft: 10}
+				img : { src : 'img/galery_small/1.png', offsetTop : 50, offsetLeft: 50}
 			}),
 			new pic({
 				top : 55, left : 107, width : 70,height : 115, href:'#',
@@ -20,7 +20,7 @@
 			}),
 			new pic({
 				top : 188, left : 115, width : 82,height : 69, href:'#',
-				img : { src : 'img/galery_small/3.png', offsetTop : 10, offsetLeft: 36}
+				img : { src : 'img/galery_small/3.png', offsetTop : 10, offsetLeft: 80}
 			}),
 			new pic({
 				top : 90, left : 198, width : 100,height : 62, href:'#',
@@ -32,7 +32,7 @@
 			}),
 			new pic({
 				top : 167, left : 216, width : 90,height : 58, href:'#',
-				img : { src : 'img/galery_small/11.png', offsetTop : 0, offsetLeft: 13}
+				img : { src : 'img/galery_small/11.png', offsetTop : 50, offsetLeft: 100}
 			}),
 			new pic({
 				top : 159, left : 325, width : 63,height : 93, href:'#',
