@@ -58,7 +58,7 @@ var config = module.exports = {
 
     // http сервер
     http                : {
-      port : 3000,
+      port : 80,
       root_folders    : {
         js       : 'static/js',
         css      : 'static/css',
